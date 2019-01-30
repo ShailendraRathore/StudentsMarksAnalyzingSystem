@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Calculations">
+   <children>
+      <Label layoutX="224.0" layoutY="26.0" text="REPORT CARD">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="111.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="154.0" layoutY="111.0" text="Label" />
+      <Label layoutX="395.0" layoutY="111.0" text="Roll No.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="rollno" layoutX="452.0" layoutY="111.0" text="Label" />
+      <TableView fx:id="table" layoutX="136.0" layoutY="155.0" prefHeight="135.0" prefWidth="313.0">
+        <columns>
+          <TableColumn fx:id="subjectColumn" prefWidth="116.0" text="SUBJECT" />
+          <TableColumn fx:id="marksColumn" text="MARKS" />
+            <TableColumn fx:id="resultColumn" prefWidth="115.0" text="RESULT" />
+        </columns>
+      </TableView>
+      <Label layoutX="463.0" layoutY="327.0" text="Result">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="327.0" text="Percentage">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="327.0" text="Total Marks">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="percentage" layoutX="333.0" layoutY="327.0" text="Label" />
+      <Label fx:id="result" layoutX="511.0" layoutY="327.0" text="Label" />
+      <Label fx:id="totalmarks" layoutX="122.0" layoutY="327.0" text="Label" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>
